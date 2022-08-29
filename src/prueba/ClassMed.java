@@ -49,7 +49,7 @@ public class ClassMed extends DataBase{
         datosVec.add(areaEncargada);
         
         for (Object e: datosVec){
-            System.out.println("");
+            System.out.println("Prueba");
         }
         if (areaEncargada.equals("Odontologia")){
             var add = datosMedOdon.add(datosVec );
