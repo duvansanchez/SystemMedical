@@ -5,6 +5,8 @@
 package prueba;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Scanner;
 
 /**
  *
@@ -15,9 +17,35 @@ public class Prueba {
     /**
      * @param args the command line arguments
      */
+    Integer c = 0;
+    
+   private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         // TODO code application logic here
-                
+ 
+    
+
+
+
+//        Array.add(39);
+//        Array.add(59);
+//        datosMedOft.add(Array);
+//        //System.out.println(datosMedOft.get(0));
+//        System.out.println(datosMedOft.get(0));
+//        Collection<Integer> ce = Array;
+//        Array.removeAll(ce);
+//        System.out.println(Array.size());
+        
+        
+        
+        /*Array.add(42);
+        Array.add(34);
+        Collection<Integer> Sed = Array;
+        Array.removeAll(Sed);
+        System.out.println(datosMedOft.get(con));*/
+       
+        //System.out.println(Array.get(0));
+        
         /*ArrayList <ArrayList<Object>> Matriz = new ArrayList <ArrayList<Object>> ();
         
         ArrayList <Object> Array = new ArrayList <Object> ();
@@ -46,23 +74,30 @@ public class Prueba {
             int numCitas = (Integer)Matriz.get(i).get(1); 
             if (numCitas < 5){ 
                 medDis.add(Matriz.get(i).get(0));
+                //Numero ramdom
                 int numAle = (int)(Math.random()*medDis.size());
                 var = medDis.get(numAle);
             }            
         }*/
 
-        ClassPac objectPac = new ClassPac ();
+////        ClassPac objectPac = new ClassPac ();
         ClassMed objectMed = new ClassMed ();
         
-        objectMed.agregarDatosMed("Sebastian",22323323,28,"Mas",2,"Oftamologia",11);
-        objectMed.agregarDatosMed("Duvan",243353535,17,"Mas",4,"Odontologia",10);
-        //objectMed.agregarDatosMed("Maria",324323323,58,"Fem",2,"Odontologia",23);
+        //objectMed.agregarDatosMed("Sebastian",22323323,28,"Mas",2,"Oftamologia",11);
+        objectMed.agregarDatosMed("Duvan",243353535,17,"Mas",0,"Odontologia",10);
+        objectMed.agregarDatosMed("Fernanda",34343435,23,"FEM",0,"Odontologia",20); 
+        objectMed.agregarDatosMed("Sebas",22323323,28,"Mas",0,"Odontologia",13);
+            
+        objectMed.asignarCita();
+        objectMed.asignarCita();
+        objectMed.asignarCita();
         
         
-        //objectMed.asignarCita();
-        //objectMed.mostrar();
-       
-       
+        
+        objectMed.mostrar();   
+
+        
+
    }
         
 }
